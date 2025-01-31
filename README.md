@@ -33,11 +33,11 @@ SimpleTicketWidget(
     arcRadius: 20,
     direction: Axis.horizontal,
     child: Container(
-    color: Colors.green,
-    height: 200,
-    width: 350,
-    alignment: Alignment.center,
-    child: Text('Ticket Clipper'),
+        color: Colors.green,
+        height: 200,
+        width: 350,
+        alignment: Alignment.center,
+        child: Text('Ticket Clipper'),
     ),
 ),
 ```
