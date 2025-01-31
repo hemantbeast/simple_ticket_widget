@@ -5,6 +5,10 @@
 
 A simple, ticket-style clipper widget for your Flutter project that supports both horizontal and vertical orientations, with built-in shadow effect and corner radius.
 
+<div> 
+  <img width="300" height="600" src="https://raw.githubusercontent.com/hemantbeast/simple_ticket_widget/refs/heads/main/screenshots/Screenshot_1.png" />
+  <img width="300" height="600" src="https://raw.githubusercontent.com/hemantbeast/simple_ticket_widget/refs/heads/main/screenshots/Screenshot_2.png" />
+</div>
 
 ## Getting started
 
@@ -37,7 +41,6 @@ SimpleTicketWidget(
     ),
 ),
 ```
-
 
 ## Usage
 
