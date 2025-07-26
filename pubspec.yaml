@@ -1,6 +1,6 @@
 name: simple_ticket_widget
 description: A simple ticket widget to display it vertically or horizontally.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/hemantbeast/simple_ticket_widget
 
 environment:
@@ -11,4 +11,11 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
+
+topics:
+  - ticket
+  - ticket-widget
+  - simple-ticket
+  - ticket-shape
+  - ticket-ui
