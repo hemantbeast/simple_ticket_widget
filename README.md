@@ -1,7 +1,7 @@
 
 # Simple Ticket Widget
 
-[![pub package](https://img.shields.io/badge/pub-1.0.0-blue.svg)](https://pub.dev/packages/simple_ticket_widget)
+[![pub package](https://img.shields.io/badge/pub-1.0.1-blue.svg)](https://pub.dev/packages/simple_ticket_widget)
 
 A simple, ticket-style clipper widget for your Flutter project that supports both horizontal and vertical orientations, with built-in shadow effect and corner radius.
 
@@ -16,7 +16,7 @@ Add the dependency to pubspec.yaml
 
 ```yml
 dependencies:
-  simple_ticket_widget: ^1.0.0
+  simple_ticket_widget: ^1.0.1
 ```
 
 Import the package.
