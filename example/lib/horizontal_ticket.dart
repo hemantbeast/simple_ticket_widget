@@ -35,7 +35,8 @@ class HorizontalTicket extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 15, vertical: 20),
                       child: Column(
                         spacing: 10,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -97,11 +98,13 @@ class HorizontalTicket extends StatelessWidget {
                                 children: [
                                   Text(
                                     'Gate'.toUpperCase(),
-                                    style: _textStyle(color: Colors.red, fontSize: 12),
+                                    style: _textStyle(
+                                        color: Colors.red, fontSize: 12),
                                   ),
                                   Text(
                                     'D 12'.toUpperCase(),
-                                    style: _textStyle(color: Colors.black, fontSize: 14),
+                                    style: _textStyle(
+                                        color: Colors.black, fontSize: 14),
                                   ),
                                 ],
                               ),
@@ -111,20 +114,24 @@ class HorizontalTicket extends StatelessWidget {
                                 children: [
                                   Text(
                                     'Boarding Time'.toUpperCase(),
-                                    style: _textStyle(color: Colors.red, fontSize: 12),
+                                    style: _textStyle(
+                                        color: Colors.red, fontSize: 12),
                                   ),
                                   Text(
                                     '07:30'.toUpperCase(),
-                                    style: _textStyle(color: Colors.black, fontSize: 14),
+                                    style: _textStyle(
+                                        color: Colors.black, fontSize: 14),
                                   ),
                                 ],
                               ),
                             ],
                           ),
                           Text(
-                            'Gate closes 40 minutes before departure'.toUpperCase(),
+                            'Gate closes 40 minutes before departure'
+                                .toUpperCase(),
                             textAlign: TextAlign.center,
-                            style: _textStyle(color: Colors.black, fontSize: 12),
+                            style:
+                                _textStyle(color: Colors.black, fontSize: 12),
                           ),
                         ],
                       ),
@@ -165,7 +172,8 @@ class HorizontalTicket extends StatelessWidget {
                         children: [
                           Text(
                             'New York'.toUpperCase(),
-                            style: _textStyle(color: Colors.white, fontSize: 14),
+                            style:
+                                _textStyle(color: Colors.white, fontSize: 14),
                           ),
                           RotatedBox(
                             quarterTurns: 1,
@@ -176,7 +184,8 @@ class HorizontalTicket extends StatelessWidget {
                           ),
                           Text(
                             'New Delhi'.toUpperCase(),
-                            style: _textStyle(color: Colors.white, fontSize: 14),
+                            style:
+                                _textStyle(color: Colors.white, fontSize: 14),
                           ),
                         ],
                       ),

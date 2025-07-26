@@ -94,11 +94,13 @@ class VerticalTicket extends StatelessWidget {
                                 children: [
                                   Text(
                                     'Gate'.toUpperCase(),
-                                    style: _textStyle(color: Colors.red, fontSize: 13),
+                                    style: _textStyle(
+                                        color: Colors.red, fontSize: 13),
                                   ),
                                   Text(
                                     'D 12'.toUpperCase(),
-                                    style: _textStyle(color: Colors.black, fontSize: 15),
+                                    style: _textStyle(
+                                        color: Colors.black, fontSize: 15),
                                   ),
                                 ],
                               ),
@@ -108,11 +110,13 @@ class VerticalTicket extends StatelessWidget {
                                 children: [
                                   Text(
                                     'Boarding Time'.toUpperCase(),
-                                    style: _textStyle(color: Colors.red, fontSize: 13),
+                                    style: _textStyle(
+                                        color: Colors.red, fontSize: 13),
                                   ),
                                   Text(
                                     '07:30'.toUpperCase(),
-                                    style: _textStyle(color: Colors.black, fontSize: 15),
+                                    style: _textStyle(
+                                        color: Colors.black, fontSize: 15),
                                   ),
                                 ],
                               ),
@@ -120,9 +124,11 @@ class VerticalTicket extends StatelessWidget {
                           ),
                           SizedBox(height: 20),
                           Text(
-                            'Gate closes 40 minutes before departure'.toUpperCase(),
+                            'Gate closes 40 minutes before departure'
+                                .toUpperCase(),
                             textAlign: TextAlign.center,
-                            style: _textStyle(color: Colors.black, fontSize: 12),
+                            style:
+                                _textStyle(color: Colors.black, fontSize: 12),
                           ),
                         ],
                       ),

@@ -203,7 +203,8 @@ Path _getVerticalPath({
   required double bottomRightRadius,
   required double bottomLeftRadius,
 }) {
-  final radius = max(topLeftRadius, topRightRadius) + max(bottomLeftRadius, bottomRightRadius);
+  final radius = max(topLeftRadius, topRightRadius) +
+      max(bottomLeftRadius, bottomRightRadius);
   position = position.clamp(radius * 2, size.height - radius);
 
   // Fix position to start from top.
@@ -263,7 +264,8 @@ Path _getHorizontalPath({
   required double bottomRightRadius,
   required double bottomLeftRadius,
 }) {
-  final radius = max(topLeftRadius, topRightRadius) + max(bottomLeftRadius, bottomRightRadius);
+  final radius = max(topLeftRadius, topRightRadius) +
+      max(bottomLeftRadius, bottomRightRadius);
   position = position.clamp(radius * 2, size.width - radius);
 
   final path = Path()
