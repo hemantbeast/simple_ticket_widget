@@ -2,7 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+/// A simple ticket widget to display it vertically or horizontally.
 class SimpleTicketWidget extends StatelessWidget {
+  /// Creates a simple ticket widget.
   const SimpleTicketWidget({
     required this.child,
     super.key,
@@ -14,18 +16,25 @@ class SimpleTicketWidget extends StatelessWidget {
     this.direction = Axis.vertical,
   });
 
+  /// The position of the arc based on direction. Default set to 100.
   final double position;
 
+  /// The circular arc radius of ticket. Default set to 16.
   final double arcRadius;
 
+  /// The shadow blur radius of the ticket. Default set to 4.
   final double blurRadius;
 
+  /// The corner radius of the ticket. Default set to BorderRadius.zero.
   final BorderRadius borderRadius;
 
+  /// The shadow color of the ticket. Default set to Colors.black54.
   final Color shadowColor;
 
+  /// The direction of the ticket widget arc. Default set to Axis.vertical.
   final Axis direction;
 
+  /// The child widget to be clipped.
   final Widget child;
 
   @override
@@ -64,6 +73,7 @@ class SimpleTicketWidget extends StatelessWidget {
   }
 }
 
+/// A custom painter to draw the shadow of the ticket.
 class _TicketShadowPainter extends CustomPainter {
   final double holeRadius;
   final double bottomHeight;
@@ -132,6 +142,7 @@ class _TicketShadowPainter extends CustomPainter {
   }
 }
 
+/// A custom clipper to clip the ticket.
 class _TicketClipper extends CustomClipper<Path> {
   final double holeRadius;
   final double bottomHeight;
@@ -194,6 +205,7 @@ class _TicketClipper extends CustomClipper<Path> {
   }
 }
 
+/// Returns a path for a vertical ticket.
 Path _getVerticalPath({
   required Size size,
   required double holeRadius,
@@ -203,8 +215,7 @@ Path _getVerticalPath({
   required double bottomRightRadius,
   required double bottomLeftRadius,
 }) {
-  final radius = max(topLeftRadius, topRightRadius) +
-      max(bottomLeftRadius, bottomRightRadius);
+  final radius = max(topLeftRadius, topRightRadius) + max(bottomLeftRadius, bottomRightRadius);
   position = position.clamp(radius * 2, size.height - radius);
 
   // Fix position to start from top.
@@ -255,6 +266,7 @@ Path _getVerticalPath({
   return path;
 }
 
+/// Returns a path for a horizontal ticket.
 Path _getHorizontalPath({
   required Size size,
   required double holeRadius,
@@ -264,8 +276,7 @@ Path _getHorizontalPath({
   required double bottomRightRadius,
   required double bottomLeftRadius,
 }) {
-  final radius = max(topLeftRadius, topRightRadius) +
-      max(bottomLeftRadius, bottomRightRadius);
+  final radius = max(topLeftRadius, topRightRadius) + max(bottomLeftRadius, bottomRightRadius);
   position = position.clamp(radius * 2, size.width - radius);
 
   final path = Path()
